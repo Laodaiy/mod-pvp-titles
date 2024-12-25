@@ -121,7 +121,7 @@ public:
         {
             if (sConfigMgr->GetOption<bool>("PvPTitles.Announce", true))
             {
-                ChatHandler(player->GetSession()).SendSysMessage("This server is running the |cff4CFF00PvPTitles |rmodule.");
+                ChatHandler(player->GetSession()).SendSysMessage("此服务器已启用|cff4CFF00军衔|r模块。");
             }
 
             if (sConfigMgr->GetOption<bool>("PvPTitles.AwardTitlesOnLogin", false))
