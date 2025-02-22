@@ -113,7 +113,10 @@ PvPTitleData const TitleData[14] =
 class PVPTitles : public PlayerScript
 {
 public:
-    PVPTitles() : PlayerScript("PVPTitles") { }
+    PVPTitles() : PlayerScript("PVPTitles", {
+        PLAYERHOOK_ON_LOGIN,
+        PLAYERHOOK_ON_PVP_KILL
+    }) { }
 
     void OnPlayerLogin(Player *player) override
     {
